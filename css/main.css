@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: rgb(21 95 165);
+}
+
+#main-div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#text-div {
+  color: #f5f5f5;
+  font-size: 70px;
+}
+
+#new-adjective-div {
+  margin-top: 0.5em;
+}
+
+#share-div {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#share-div p {
+  font-size: 12px;
+  margin: 0;
+}
