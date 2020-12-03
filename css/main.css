@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: rgb(21 95 165);
+  background-color: rgb(146 91 29);
 }
 
 #main-div {
@@ -35,5 +35,6 @@ body {
 
 #share-div p {
   font-size: 12px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }

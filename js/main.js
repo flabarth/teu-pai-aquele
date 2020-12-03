@@ -11,7 +11,7 @@
     location.href = url.href;
   } else {
     document.getElementById('adjective').innerHTML = adjectives[index];
-    document.getElementsByClassName('twitter-share-button')[0].href = 'https://twitter.com/intent/tweet?text=Meu%20pai%20aquele%20' + adjectives[index] + '%20' + location.href;
+    document.getElementsByClassName('twitter-share-button')[0].href += 'Meu%20pai%20aquele%20' + adjectives[index] + '%20';
   }
 
 })();
