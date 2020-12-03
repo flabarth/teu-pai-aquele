@@ -8,10 +8,16 @@
   if(index === null || index === 'a') {
     var index = Math.trunc(Math.random() * adjectives.length);
     url.searchParams.set('a', index);
-    location.href = url.href;
+    setAdjective(index);
+    window.history.pushState('', 'Teu pai aquele ' + adjectives[index], url.href);
   } else {
+    setAdjective(index);
+  }
+
+  function setAdjective(index) {
     document.getElementById('adjective').innerHTML = adjectives[index];
-    document.getElementsByClassName('twitter-share-button')[0].href += 'Meu%20pai%20aquele%20' + adjectives[index] + '%20';
+    document.title = 'Teu pai aquele ' + adjectives[index];
+    document.getElementsByClassName('twitter-share-button')[0].href += 'Teu%20pai%20aquele%20' + adjectives[index] + '%20';
   }
 
 })();
